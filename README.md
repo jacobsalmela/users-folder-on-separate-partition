@@ -12,7 +12,7 @@
 ## Resources
 + [http://macmule.com/2012/07/31/how-to-use-fstab-within-a-casper-imaging-workflow/](http://macmule.com/2012/07/31/how-to-use-fstab-within-a-casper-imaging-workflow/)
 + [https://github.com/ox-it/mac-scripts](https://github.com/ox-it/mac-scripts)
-+ [https://mjung.net/publications/20121023-JAMF-NUC-The_College_Challenge-Macs_at_Oxford/Marko%20Jung%20-%20JAMF%20Software%20NUC%202012%20Minneapolis%20-%20Managing%20Macs%20at%20Oxford%20-%2020121018-1455-web.pdf](https://mjung.net/publications/20121023-JAMF-NUC-The_College_Challenge-Macs_at_Oxford/Marko%20Jung%20-%20JAMF%20Software%20NUC%202012%20Minneapolis%20-%20Managing%20Macs%20at%20Oxford%20-%2020121018-1455-web.pdf)
++ [2013 JNUC: The College Challenge Macs at Oxford](https://mjung.net/publications/20121023-JAMF-NUC-The_College_Challenge-Macs_at_Oxford/Marko%20Jung%20-%20JAMF%20Software%20NUC%202012%20Minneapolis%20-%20Managing%20Macs%20at%20Oxford%20-%2020121018-1455-web.pdf)
 
 ## Setup 
 ### Create `/etc/fstab` for a deployable `.pkg`
@@ -24,9 +24,9 @@ Using Casper Composer to capture a new package:
 
 ### Copy the scripts into the JSS
 
-0. 000- should be a _Before_ script
-1. 002- should be an _After_ script
-2. 003- should be an _After_ script
+0. `001-partition-disk.sh` should be a _Before_ script
+1. `002-create-fstab.sh` should be an _After_ script
+2. `003-change-users-volume-icon.sh` should be an _After_ script
 
 ### Set up the imaging workflow 
 Use something similar to this:
