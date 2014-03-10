@@ -20,6 +20,8 @@ Using Casper Composer to capture a new package:
 
 0. use `vifs` to edit `/etc/fstab` with the following line:  `LABEL=Users\040HD /Users hfs rw`
 1. Create a new folder to store the icon: `/usr/local/imaging/users.icns`
+![/Users new icon][workflow]
+[workflow]: http://i.imgur.com/6lv94cC.png
 2. Save as a new .pkg
 
 ### Copy the scripts into the JSS
